@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: #ffebef;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: crosshair;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #ff69b4;
+}
+
+.social-hub {
+    text-align: center;
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+    margin: 100px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 5px solid rgb(255, 105, 180); /* Removed transparency */
+    transition: background 0.5s, border 0.5s;
+}
+
+.dark-mode .social-hub {
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 105, 180); /* Removed transparency */
+}
+
+.social-hub h1, .social-hub p {
+    color: #ff69b4;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.7); /* Retained text-shadow for text */
+}
+
+.dark-mode .social-hub h1, .dark-mode .social-hub p {
+    color: #ff69b4;
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.7); /* Retained text-shadow for text */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ff69b4;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    border: 3px solid rgb(255, 105, 180); /* Removed transparency */
+    transition: background 0.3s, border 0.3s;
+}
+
+.dark-mode .social-links a {
+    color: #ff69b4;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgb(255, 105, 180); /* Removed transparency */
+}
+
+.social-links a:hover {
+    background: rgba(255, 182, 193, 0.5);
+    border: 3px solid rgb(255, 105, 180); /* Solid color for hover */
+}
+
+.dark-mode .social-links a:hover {
+    background: rgba(255, 105, 180, 0.5);
+    border: 3px solid rgb(255, 105, 180); /* Solid color for hover */
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid rgb(255, 105, 180); /* Removed transparency */
+    transition: border 0.5s;
+}
+
+.dark-mode .profile-pic {
+    border: 5px solid rgb(255, 105, 180); /* Removed transparency */
+}
+
+/* Light/Dark Mode Switch */
+.mode-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: rgb(255, 105, 180);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid rgb(255, 105, 180); /* Removed transparency */
+    transition: background 0.3s, border 0.3s;
+}
+
+.dark-mode .mode-switch {
+    background: rgb(255, 105, 180);
+    color: #fff;
+    border: 3px solid rgb(255, 105, 180); /* Removed transparency */
+}
+
+/* Neon Rain Background */
+.neon-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.neon-rain canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Typewriter Effect Styles */
+#typewriter-text {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+#spotify{
+    border: 3px solid rgb(255, 105, 180);
+}
